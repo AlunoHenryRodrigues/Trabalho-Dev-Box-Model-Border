@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --laranjinha: #FC6445;
+    --roxo-escuro: #391C55;
+    --roxo-padrao: #9966CC;
+    --roxo-craro: #C9A0DC;
+    --rosa: #DDA0DD;
+    --branquin: #E6E6FA;
+    --fonte-padrao: "Nunito Sans", sans-serif;
+}
+
+body{
+    
+}
