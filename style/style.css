@@ -21,6 +21,9 @@ body{
 }
 
 .botaos{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0s; 
     display: flex;
     width: 98%;
     height: 98%;
@@ -33,9 +36,20 @@ body{
 #direita{
     width: 60px;
     height: 40px;
-    background-color: var(--roxo-padrao);
-    color: var(--roxo-craro);
-    border: 2px transparent;
+    border: 2px solid transparent;
     border-radius: 10px;
+    background-color: var(--rosa);
+    background:
+        linear-gradient(var(--rosa), var(--rosa)) padding-box,
+        linear-gradient(to right, var(--rosa), var(--roxo-padrao)) border-box;
     font-weight: 500px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
