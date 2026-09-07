@@ -87,7 +87,7 @@ body {
 }
 
 .ex3{
-    width: 320px;
+    width: 350px;
 }
 
 .botao{
@@ -99,7 +99,7 @@ body {
 
 .exemplo4{
     align-self: flex-end;
-    margin-top: -700px;
+    margin-top: -530px;
     margin-left: 0px;
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
@@ -107,7 +107,7 @@ body {
 }
 
 .ex4{
-    width: 600px;
+    width: 450px;
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
     animation-delay: 1.2s;
@@ -166,4 +166,11 @@ body {
     to{
         opacity: 1;
     }
+}
+
+.botao {
+  border-top: 3px solid red; 
+  border-right: 1px solid black; 
+  border-bottom: 5px solid blue; 
+  border-left: 2px dashed green;  
 }
