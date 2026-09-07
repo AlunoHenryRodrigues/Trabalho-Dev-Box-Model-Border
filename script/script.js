@@ -8,10 +8,10 @@ const direita = document.getElementById("direita");
 //botão direito
 document.addEventListener("keydown", function(event){
     if (event.key === "ArrowRight"){
-        window.location.href = "slide1.html"
+        window.location.href = "boxmodel.html"
     }
 })
  
 direita.addEventListener("click", function(){
-    window.location.href = "slide1.html"
+    window.location.href = "boxmodel.html"
 });
