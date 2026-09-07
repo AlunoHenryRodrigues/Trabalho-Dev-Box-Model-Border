@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --roxo-branco: #E6E6FA;
@@ -12,6 +13,7 @@
     --preto-puro: #000000;
     --branco-puro: #fff;
     --nunito: 'Nunito Sans', sans-serif;
+    --poppins: 'Montserrat', sans-serif;
 }
 
 * {
@@ -33,6 +35,86 @@ body {
 
 #slides {
     background: linear-gradient(131deg, var(--roxo-fundo, #251237) 22.69%, #734087 107.41%);
+}
+
+.slide {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titulo-capa {
+    font-size: 90px;
+    color: var(--amarelo-contraste);
+    font-weight: 400;
+}
+
+#subtitulo-capa {
+    font-size: 43px;
+    color: var(--amarelo-contraste);
+    font-weight: 200;
+}
+
+.titulo {
+    font-family: var(--poppins);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.linha-titulo {
+    width: 1086px;
+    height: 4px;
+
+    background: linear-gradient(90deg, var(--roxo-fundo, #251237) 0%, #F6C445 48.08%, #481975 100%);
+}
+
+.integrantes {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background: var(--roxo-fundo);
+
+    border-radius: 10px;
+}
+
+.grupo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    opacity: 0;
+    padding: 10px;
+}
+.grupo span {
+    background: linear-gradient(180deg, #E6E6FA 23.04%, #5F1AA0 150.92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grupo1 {
+    animation: passar 4s infinite;
+}
+
+.grupo2 {
+    animation: passar 4s infinite;
+    animation-delay: 2s;
+}
+
+/*Animação pra passar os nomes*/
+@keyframes passar {
+    0% {opacity: 1;}
+    45% {opacity: 1;}
+    50% {opacity: 0;}
+    95% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .elipse {
@@ -60,6 +142,7 @@ body {
     bottom: -450px;
     width: 900px;
     height: 780px;
+    background: #39125E;
 }
 
 .botaos{
@@ -265,4 +348,6 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    margin-left: 80px;
 }
