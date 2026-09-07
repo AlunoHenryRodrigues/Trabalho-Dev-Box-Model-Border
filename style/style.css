@@ -56,3 +56,26 @@ body {
     width: 900px;
     height: 780px;
 }
+
+.botaos{
+    display: flex;
+    width: 98%;
+    height: 98%;
+    position: fixed;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0;
+}
+ 
+#direita{
+    width: 60px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--roxo-fundo);
+    background:
+        linear-gradient(var(--roxo-fundo), var(--roxo-fundo)) padding-box,
+        linear-gradient(to right, var(--roxo-fundo), var(--amarelo-contraste)) border-box;
+    font-weight: 500px;
+}
