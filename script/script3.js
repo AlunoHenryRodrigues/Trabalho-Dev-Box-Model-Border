@@ -8,12 +8,12 @@ const esquerda = document.getElementById("esquerda");
 //botão direito
 document.addEventListener("keydown", function(event){
     if (event.key === "ArrowRight"){
-        window.location.href = "slide1.html"
+        window.location.href = "slide4.html"
     }
 })
  
 direita.addEventListener("click", function(){
-    window.location.href = "slide1.html"
+    window.location.href = "slide4.html"
 });
 
 

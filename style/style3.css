@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
 :root {
     --roxo-branco: #E6E6FA;
     --roxo-rosado: #DDA0DD;
@@ -39,37 +35,74 @@ body {
 .content{
     margin-left: 150px;
     margin-top: 100px;
-    border: 2px solid black;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
     width: 80%;
-    height: 75%;    
+    height: 75%;
+    padding: 100px;
 }
 
-
 #title{
+    margin-top: -130px;
+    
     font-family: var(--fonte-titulo);
     font-size: 100px;
-    font-weight: 100px;
-    position: relative;
-    top: -80px;
-    left: -380px;
+    font-weight: 600;
 
     background: linear-gradient(to right, var(--amarelo-contraste), var(--amarelo-contraste), rgb(212, 212, 212));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.5s;
 }
 
 #info{
+    margin-top: -10px;
+    color: var(--branco-puro);
     font-size: 40px;
     font-family: var(--fonte-padrao);
-    position: relative;
-    top: -200px;
-    left: -350px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.8s;
 }
+
+.exemplo{
+    margin-top: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1s;
+}
+
+.ex1{
+    width: 400px;
+}
+
+
+.exemplo2{
+    align-self: flex-end;
+    margin-top: -500px;
+    margin-left: 0px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.2s;
+}
+
+.ex2{
+    width: 500px;
+}
+
 
 
 .botaos{
@@ -83,6 +116,9 @@ body {
     gap: 4px;
     bottom: 0;
     right: 0;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0s;
 
 }
  
@@ -110,4 +146,14 @@ body {
         linear-gradient(var(--roxo-fundo), var(--roxo-fundo)) padding-box,
         linear-gradient(to left, var(--roxo-fundo), var(--amarelo-contraste)) border-box;
     font-weight: 500px;
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
