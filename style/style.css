@@ -3,8 +3,56 @@
     --roxo-rosado: #DDA0DD;
     --roxo-claro: #C9A0DC;
     --roxo-forte: #9966CC;
-    --roxo-fundo: #391C55;
+    --roxo-medio: #813AC5;
+    --roxo-fundo: #251237;
+    --roxo-fundo-sombra: rgba(0, 0, 0, 0.25);
     --amarelo-contraste: #F6C445;
     --preto-puro: #000000;
     --branco-puro: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(131deg, var(--roxo-fundo, #251237) 22.69%, #451A6D 58.53%, #4F1783 85.31%, var(--roxo-medio) 107.41%);
+
+
+}
+
+.elipse {
+    height: 385px;
+    width: 455px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#el1 {
+    left: -260px;
+    top: -150px;
+    background: var(--roxo-fundo);
+    box-shadow: 29px 55px 43.5px 0 var(--roxo-fundo-sombra);
+}
+
+#el2 {
+    background: #4C187E;
+    right: -170px;
+    bottom: -150px;
+}
+
+#el3 {
+    background: var(--ro);
+    right: -520px;
+    bottom: -450px;
+    width: 900px;
+    height: 780px;
 }
