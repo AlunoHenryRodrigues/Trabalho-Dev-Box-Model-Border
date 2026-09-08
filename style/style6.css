@@ -64,7 +64,7 @@ body {
 #info{
     margin-top: -10px;
     color: var(--branco-puro);
-    font-size: 20px;
+    font-size: 25px;
     font-family: var(--fonte-padrao);
     font-weight: 100;
     opacity: 0;
@@ -83,7 +83,7 @@ body {
     animation: fadeIn 0.5s ease-in forwards;
     animation-delay: 1s;
     margin-left: -50px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .ex3{
@@ -98,16 +98,16 @@ body {
 }
 
 .exemplo4{
-    align-self: flex-end;
-    margin-top: -480px;
-    margin-left: -200px;
+    align-self: flex-start;
+    margin-top: -450px;
+    margin-left: 575px;
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
     animation-delay: 1.2s;
 }
 
 .ex4{
-    width: 440px;
+    width: 335px;
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
     animation-delay: 1.2s;
