@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>slide 10</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+  :root {
+    --roxo-branco: #E6E6FA;
+    --roxo-rosado: #DDA0DD;
+    --roxo-claro: #C9A0DC;
+    --roxo-forte: #9966CC;
+    --roxo-medio: #813AC5;
+    --roxo-fundo: #251237;
+    --roxo-fundo-sombra: rgba(0, 0, 0, 0.25);
+    --amarelo-contraste: #F6C445;
+    --preto-puro: #000000;
+    --branco-puro: #fff;
+    --fonte-padrao: "Nunito Sans", sans-serif;
+    --fonte-titulo: "Poppins", sans-serif;
+   
+}
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: "Nunito Sans", sans serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(131deg, var(--roxo-fundo, #251237) 22.69%, #451A6D 58.53%, #4F1783 85.31%, var(--roxo-medio) 107.41%);
+    padding: 40px;
+  }
+
+  .slide {
+    max-width: 1200px;
+    width: 100%;
+    color: #fff;
+  }
+
+  h1 {
+    margin: 0 0 30px 0;
+    font-size: 5rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .highlight {
+    background: linear-gradient(101deg, #FFD466 42.2%, #DDA0DD 107.95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+  }
+
+  .panels-grid {
+    display: flex;
+    gap: 26px;
+    align-items: stretch;
+  }
+
+  .panels-col {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .panels-col.left {
+    flex: 42;
+  }
+
+  .panels-col.right {
+    flex: 58;
+  }
+
+  .panels-col.left .panel:nth-child(1) { flex: 118; }
+  .panels-col.left .panel:nth-child(2) { flex: 100; }
+
+  .panels-col.right .panel:nth-child(1) { flex: 118; }
+  .panels-col.right .panel:nth-child(2) { flex: 175; }
+  .panels-col.right .panel:nth-child(3) { flex: 100; }
+
+  .panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.10) 40%, rgba(0,0,0,0.18) 100%);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 22px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 10px 25px rgba(0,0,0,0.25);
+    padding: 34px 44px;
+  }
+
+  .panel::after {
+    content: "";
+    position: absolute;
+    top: -60%;
+    right: -30%;
+    width: 90%;
+    height: 220%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 55%);
+    transform: rotate(20deg);
+    pointer-events: none;
+  }
+
+  p.grad-text {
+    margin: 0;
+    font-size: 1.55rem;
+    line-height: 1.55;
+    text-align: center;
+    background: linear-gradient(180deg, #f3eafb 0%, #DDA0DD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .panel.obrigado-panel .highlight {
+    font-size: 4rem;
+  }
+
+  .botaos {
+    display: flex;
+    width: 99%;
+    height: 94%;
+    position: fixed;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0;
+    gap: 4px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+ 
+#direita{
+    width: 60px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--roxo-fundo);
+    background:
+        linear-gradient(var(--roxo-fundo), var(--roxo-fundo)) padding-box,
+        linear-gradient(to right, var(--roxo-fundo), var(--amarelo-contraste)) border-box;
+    font-weight: 500px;
+}
+
+#esquerda{
+    width: 60px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--roxo-fundo);
+    background:
+        linear-gradient(var(--roxo-fundo), var(--roxo-fundo)) padding-box,
+        linear-gradient(to left, var(--roxo-fundo), var(--amarelo-contraste)) border-box;
+    font-weight: 500px;
+}
+</style>
+</head>
+<body>
+
+  <div class="slide">
+    <h1><span class="highlight">Conclusão</span></h1>
+
+    <div class="panels-grid">
+      <div class="panels-col left">
+        <div class="panel">
+          <p class="grad-text">A área de borda está dentro do box model depois do conteúdo e preenchimento, se escrita na versão shorthand podem ser definidas sua expessura, estilo e cor nessa ordem, separadas, podem ser definir a propriedade de cada canto da borda.</p>
+        </div>
+        <div class="panel">
+          <p class="grad-text">Podemos usar algumas funções nessas propriedades que permitem a borda ter a estilização do elemento pai, o padrão do css ou até o padrão do navegador.</p>
+        </div>
+      </div>
+
+      <div class="panels-col right">
+        <div class="panel">
+          <p class="grad-text">Para definir o arredondamento do raio da borda deve ser usada a propriedade border-radius que pode definir o arredondamento de cada canto ou até de mais de um raio.</p>
+        </div>
+        <div class="panel">
+          <p class="grad-text">Se quisermos, podemos colocar uma imagem numa borda e definir qual parte da imagem queremos usar, fazer a imagem se repetir e até escapar para dentro da área do conteúdo e do preenchimento.</p>
+        </div>
+        <div class="panel obrigado-panel">
+          <span class="highlight">Obrigado</span>
+        </div>
+      </div>
+    </div>
+    <footer class="botaos">
+      <button id="esquerda">←</button>
+  </footer>
+  </div>
+ <script>
+  //entrada
+const esquerda = document.getElementById("esquerda");
+
+//botao esquerdo
+document.addEventListener("keydown", function(event){
+
+    if (event.key === "ArrowLeft"){
+
+        window.location.href = "slide7.html"
+
+    }
+
+})
+
+esquerda.addEventListener("click", function(){
+
+    window.location.href = "slide7.html"
+
+});
+ </script>
+</body>
+</html>
