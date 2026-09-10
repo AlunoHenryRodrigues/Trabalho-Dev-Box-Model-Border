@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            position: relative;
+            background: linear-gradient(131deg, var(--roxo-fundo, #251237) 22.69%, #734087 107.41%);
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="titulo">
+            <span id="titulo">Na prática:</span>
+            <span id="subtitulo">criando um card</span>
+            <div class="texto">
+                <span id="texto-corrido">Vamos criar um botão com estilização de borda para evidenciar o que apresentamos, ele terá uma borda de 2 pixels sólida azul, seu raio horizontal terá 10 pixels de arredondamento e o raio vertical 50 pixels:</span>
+            </div>
+        </div>    
+    </div>
+    <div class="content">
+        
+        <div class="content-esquerdo">
+            
+        </div>
+
+        <div class="content-direito">
+
+        </div>
+    </div>
+
+    <script>
+       //entrada
+const direita = document.getElementById("direita");
+const esquerda = document.getElementById("esquerda");
+
+
+//processamentos e funções
+ 
+//botão direito
+document.addEventListener("keydown", function(event){
+    if (event.key === "ArrowRight"){
+        window.location.href = "slide8.html"
+    }
+})
+ 
+direita.addEventListener("click", function(){
+    window.location.href = "slide8.html"
+});
+
+
+
+//botao esquerdo
+document.addEventListener("keydown", function(event){
+
+    if (event.key === "ArrowLeft"){
+
+        window.location.href = "slide6.html"
+
+    }
+
+})
+
+esquerda.addEventListener("click", function(){
+
+    window.location.href = "slide6.html"
+
+});
+ 
+    </script>
+</body>
+</html>

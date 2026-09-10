@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --roxo-branco: #E6E6FA;
+    --roxo-rosado: #DDA0DD;
+    --roxo-claro: #C9A0DC;
+    --roxo-forte: #9966CC;
+    --roxo-medio: #813AC5;
+    --roxo-fundo: #251237;
+    --roxo-fundo-sombra: rgba(0, 0, 0, 0.25);
+    --amarelo-contraste: #F6C445;
+    --preto-puro: #000000;
+    --branco-puro: #fff;
+    --fonte-padrao: "Nunito Sans", sans-serif;
+    --fonte-titulo: "Poppins", sans-serif;
+}
+
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 300px calc(100% - 300px);
+    grid-template-areas: 
+    "header caixas"
+    "texto caixas";
+
+    /*background: linear-gradient(131deg, var(--roxo-fundo, #251237) 22.69%, #734087 107.41%);*/
+    
+    height: 100vh;
+    width: 100vh;
+
+    overflow: hidden;
+    background-color: #C9A0DC;
+}
+
+.quadrado1 {
+    width: 298.687px;
+    height: 298.687px;
+    transform: rotate(119.951deg);
+    position: absolute;
+
+    border-radius: 14.934px;
+    opacity: 0.5;
+    background: var(--roxo-forte, #96C);
+
+
+    z-index: 1;
+}
+
+.quadrado2 {
+    width: 233.146px;
+    height: 233.146px;
+    transform: rotate(127.555deg);
+    position: absolute;
+
+    border-radius: 11.657px;
+    opacity: 0.5;
+    background: #C9A0DC;
+
+    z-index: 2;
+}
+
+.texto {
+    font-family: var(--fonte-padrao);
+}

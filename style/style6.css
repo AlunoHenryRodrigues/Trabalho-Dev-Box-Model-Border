@@ -1,0 +1,57 @@
+@import url('style5.css');
+
+/* ===== Slide 6 - Border image ===== */
+
+#info{
+    margin-top: -10px;
+}
+
+.exemplo5{
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1s;
+    margin-left: -50px;
+    margin-top: 90px;
+}
+
+.ex5{
+    width: 350px;
+    margin-top: -20px;
+}
+
+.exemplo6{
+    align-self: flex-end;
+    margin-top: -570px;
+    margin-left: 0px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.2s;
+}
+
+.ex6{
+    width: 320px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.2s;
+    margin-top: 100px;
+    margin-right: 40px;
+}
+
+.legenda-exemplo{
+    position: fixed;
+    top: 445px;
+    right: 195px;
+    color: var(--branco-puro);
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.4s;
+}

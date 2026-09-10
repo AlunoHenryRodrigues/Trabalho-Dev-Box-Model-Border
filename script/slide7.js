@@ -1,19 +1,19 @@
 //entrada
 const direita = document.getElementById("direita");
 const esquerda = document.getElementById("esquerda");
- 
- 
+
+
 //processamentos e funções
  
 //botão direito
 document.addEventListener("keydown", function(event){
     if (event.key === "ArrowRight"){
-        window.location.href = "slide6.html"
+        window.location.href = "slide8.html"
     }
 })
  
 direita.addEventListener("click", function(){
-    window.location.href = "slide6.html"
+    window.location.href = "slide8.html"
 });
 
 
@@ -23,7 +23,7 @@ document.addEventListener("keydown", function(event){
 
     if (event.key === "ArrowLeft"){
 
-        window.location.href = "slide4.html"
+        window.location.href = "slide6.html"
 
     }
 
@@ -31,6 +31,6 @@ document.addEventListener("keydown", function(event){
 
 esquerda.addEventListener("click", function(){
 
-    window.location.href = "slide4.html"
+    window.location.href = "slide6.html"
 
 });

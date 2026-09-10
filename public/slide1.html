@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>slide 1</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body id="slides">
-    <div class="slide">
-        <div class="esquerda-slide">
-            <div class="quadrado1"></div>
+<body>
+        <div class="quadrado1"></div>
+        <div class="texto">
             <span id="titulo-box-model">Box model</span>
-            <div class="texto-box-model"><p>Essas áreas do box model são feitas de dentro para fora, começando com o conteúdo real do elemento na content box, essa área geralmente contém um fundo, cor da fonte ou uma imagem, seguida da área de padding ou preenchimento onde a área de conteúdo se estende e ela vai até área de border.</p></div>
+            <div class="texto-box-model" id="texto-box-model"><p>Em uma página WEB, cada elemento é representado como um box retangular. No CSS, cada um desses boxes retangulares é descrita usando o box model padrão. Este modelo descreve o conteúdo do espaço ocupado por um elemento. Cada box possui 4 edges: margin edge, border edge, padding edge e content edge.</p></div>
         </div>
-        <div class="direita-slide">
-            <div class="caixas">
-                <div class="caixa" id="c1"><span>Margin</span></div>
-                <div class="caixa" id="c2"><span>Border</span></div>
-                <div class="caixa" id="c3"><span>Padding</span></div>
-                <div class="caixa" id="c4"><span>Content</span></div>
-                
-            </div>
-            <div class="quadrado2"></div>
+        <div class="caixas">
+            <div class="caixa" id="c1"><span>Margin</span></div>
+            <div class="caixa" id="c2"><span>Border</span></div>
+            <div class="caixa" id="c3"><span>Padding</span></div>
+            <div class="caixa" id="c4"><span>Content</span></div>
         </div>
-    </div>
+        <div class="quadrado2"></div>
+        <footer class="botaos">
+            <button id="esquerda">←</button>
+            <button id="direita">→</button>
+        </footer>
+        <script src="../script/slide1.js"></script>
 </body>
 </html>
