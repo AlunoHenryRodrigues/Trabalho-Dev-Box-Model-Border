@@ -46,7 +46,7 @@ function voltar() {
         texto.textContent = textoOriginal;
         jaClicou = false;
     } else {
-        window.top.location.href = "capa.html"; 
+        window.top.location.href = "index.html"; 
     }
 }
 
